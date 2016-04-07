@@ -1,0 +1,15 @@
+- 集成springmvc    ---ok
+- 能够自运行            -----ok  mvn  package  -Dmaven.test.skip=true
+- 集成阿里德鲁伊连接池    ---ok
+- 集成pg    ---ok
+- 集成mongodb     -----ok
+- 集成solr     -----no
+- 集成redis     -----ok
+- 健康监控     ---ok   http://127.0.0.1:8080/health
+- 访问限制	---ok  zuaa aaaaaaaa
+- 安全模块	---ok 与hessian模块冲突，带权限限制的hessian不知道怎么调用
+- 集成hessian        ---ok  与安全模块冲突
+- 读写分离   -----no
+- 集成缓存    -----no
+
+- 集成mybatis      -----no 
