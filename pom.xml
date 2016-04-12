@@ -31,10 +31,8 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<!-- 安全 -->
-	<!-- 	<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-security</artifactId> 
+			</dependency> -->
 		<!-- 安全 -->
 		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-data-jpa</artifactId> 
 			</dependency> -->
@@ -48,8 +46,6 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-aop</artifactId> 
-			</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-redis</artifactId>
@@ -64,13 +60,20 @@
 			<artifactId>druid</artifactId>
 			<version>1.0.9</version>
 		</dependency>
-		<!-- <dependency> <groupId>org.mybatis</groupId> <artifactId>mybatis</artifactId> 
-			<version>3.3.0</version> <scope>compile</scope> </dependency> -->
-		<!-- <dependency> <groupId>org.mybatis</groupId> <artifactId>mybatis-spring</artifactId> 
-			<version>1.2.2</version> <scope>compile</scope> </dependency> -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.3.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>1.2.2</version>
+			<scope>compile</scope>
+		</dependency>
 
-		<!-- <dependency> <groupId>com.zaxxer</groupId> <artifactId>HikariCP-java6</artifactId> 
-			<version>2.3.8</version> </dependency> -->
+
 
 
 		<dependency>
@@ -78,6 +81,14 @@
 			<artifactId>hessian</artifactId>
 			<version>4.0.7</version>
 		</dependency>
+
+
+        <dependency>
+            <groupId>com.gecpp.service.skeleton</groupId>
+            <artifactId>fm-skeleton</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
 
 	</dependencies>
 
