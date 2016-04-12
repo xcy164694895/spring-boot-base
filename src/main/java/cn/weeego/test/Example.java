@@ -1,5 +1,6 @@
 package cn.weeego.test;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -10,23 +11,24 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.remoting.caucho.HessianServiceExporter;
 
 @Configuration
-@ComponentScan
+@ComponentScan("cn.weeego")
+@MapperScan("cn.weeego.mapper")
 @EnableAutoConfiguration
 public class Example {
-	@Autowired
-	private HelloService helloService;
+  @Autowired
+  private HelloService helloService;
 
-	public static void main(String[] args) {
-		ApplicationContext ctx = SpringApplication.run(Example.class, args);
+  public static void main(String[] args) {
+    ApplicationContext ctx = SpringApplication.run(Example.class, args);
 
-	}
+  }
 
-	@Bean(name = "/HelloService")
-	public HessianServiceExporter accountService() {
-		HessianServiceExporter exporter = new HessianServiceExporter();
-		exporter.setService(helloService);
-		exporter.setServiceInterface(HelloService.class);
-		return exporter;
-	}
+  @Bean(name = "/HelloService")
+  public HessianServiceExporter accountService() {
+    HessianServiceExporter exporter = new HessianServiceExporter();
+    exporter.setService(helloService);
+    exporter.setServiceInterface(HelloService.class);
+    return exporter;
+  }
 
 }
